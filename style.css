@@ -45,6 +45,12 @@ h1 {
     justify-content: center;
     margin-bottom: 2rem;
     margin: 0 16rem;
+    width: 70%;
+}
+
+.recipe-left, 
+.recipe-right {
+    width: 50%;
 }
 
 .recipe-left img {
@@ -52,3 +58,21 @@ h1 {
     margin-right: auto;
     display: block;
 }
+
+@media only screen and (max-width: 480px) {
+    .recipe-list {
+        flex-direction: column;
+    }
+
+    .recipe-left, .recipe-right {
+    width: 100%;
+    }
+
+    .recipe-body {
+        display: block;
+        flex-direction: column;
+        margin: 0 10px;
+        width: 90vw;
+        
+    }
+    }
